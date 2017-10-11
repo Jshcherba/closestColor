@@ -1,0 +1,36 @@
+.info-wrapper {
+    display: none;
+}
+.form-row {
+    margin: 5px 0 10px 0;
+}
+label {
+    display: block;
+    font-weight: 600;
+}
+
+#result {
+    color: green;
+}
+#result.error {
+    color: red;
+}
+
+code {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.color-value {
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+}
+.color-label {
+    display: none;
+}
+
+.added {
+    width:50px;
+    height:20px;
+    display: inline-block;
+}

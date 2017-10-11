@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Get the closest color</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<h3>Hi there!</h3>
+<p>Using this pseudo app you can get the closest color(s) for one you need.</p>
+<h4><a class="instruction" href="javascript:void(0);">Click here if you want to know how it works</a></h4>
+<div class="info-wrapper">
+    <p>In the document below you can find a form with 3 elements</p>
+    <ul>
+        <li>Input</li>
+        <li>Textarea</li>
+        <li>Button</li>
+    </ul>
+    <p>Please paste color VALUE (like #69849b) into the input <br>
+        Please paste color variables from your _variables.scss file into the textarea
+        <br>
+        <br>
+        It should look like
+        <br>
+        <code>
+            $brand-primary: #69849b;<br>
+            $brand-primary-bright: #6286a3;<br>
+            $brand-primary-dark: #5f7b92;<br>
+            $black: #000;<br>
+            $dark-gray: #2f333a;<br>
+            $new: #838588;<br>
+            $medium-gray: #67696d;<br>
+            $light-gray: #d5d5d5;<br>
+            $white: #fff;<br>
+            $lighter-gray: #f2f2f2;<br>
+            $accent-first: #87788a;<br>
+            $accent-second: #7d6585;<br>
+            $accent-third: #cdbf88;<br>
+            $accent-forth: #568f8f;<br>
+            $accent-fifth: #9b373e;<br>
+            $accent-six: #5a6b8a;<br>
+            $accent-seven: #3d8296;<br>
+            $accent-eight: #799a7f;<br>
+            $dark-beige: #ae9d5c;<br>
+            $slate-grey-two: #656a6e;<br>
+        </code>
+        <br>
+        And then submit the button by clicking the submit button</p>
+</div>
+
+<h3>Here goes the form</h3>
+<form id="closestColorForm" action="#">
+    <div class="form-row">
+        <label for="colorValue">Color Value</label>
+        <input type="text" name="colorValue" id="colorValue"> <span class="color-value">&nbsp;</span>&nbsp;<span class="color-label">Color you look for</span>
+    </div>
+    <div id="result"></div>
+    <div class="form-row">
+        <label for="variables">Variables list</label>
+        <textarea name="variables" id="variables" cols="100" rows="15"></textarea>
+    </div>
+    <div class="form-row">
+        <button type="submit">Get the closest!</button>
+    </div>
+</form>
+</body>
+</html>
